@@ -1,0 +1,304 @@
+@charset="utf-8";
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:14px;
+    font-weight: 300;
+}
+a:link,a:visited{
+    text-decoration:none;
+    color:black;    
+}
+#wrapper{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.header{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+
+.menu{
+    width:200px;
+    height: 50px;
+    float: left;
+    overflow: hidden;
+    transition:0.5s;
+}
+.menu > a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background: #eee;
+    text-align: center;
+}
+.menu > a:hover{
+    background: #ddd;
+}
+.sub{
+    width:200px;
+    height: 200px;
+    float: left;
+    display: block;
+}
+.sub a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.sub a:hover{
+    background: #ccc;
+}
+.menu:hover{
+    height:250px;
+}
+#wrapper2{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+}
+.header2{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.menus{
+    width:200px;
+    height: 50px;
+    position:relative;
+}
+.menus>a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.menus>a:hover{
+    background: #ddd;
+}
+.subs{
+    width: 0;
+    height: 200px;
+    position:absolute;
+    top: 0;
+    left:100%;
+    transition:0.5s;
+    overflow: hidden;
+}
+.submenu{
+    width:200px;
+    height: 200px;
+    display: block;
+}
+.submenu a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    float: left;
+    background: #eee;
+}
+.submenu a:hover{
+    background: #ddd;
+}
+.menus:hover .subs{
+    width:200px;
+}
+#wrapper3{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.head{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.mega{
+    width:200px;
+    height: 50px;
+    float: left;
+    transition:0.5s;
+    overflow: hidden;
+}
+
+.mega > a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.mega > a:hover{
+    background: #ddd;
+}
+.mega2{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.mega2 a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.mega2 a:hover{
+    background: #ddd;
+}
+.mega:hover{
+    height:250px;
+}
+#wrapper4{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+}
+.head2{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.megamenu{
+    width:200px;
+    height: 50px;
+    float: left;
+    position:relative;
+}
+.megamenu > a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    background: #eee;
+}
+.megamenu > a:hover{
+    background: #ddd;
+}
+.megamenubox{
+    width: 0;
+    height: 200px;
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 100%;
+    transition:0.5s;
+    overflow: hidden;
+}
+.megabox{
+    width:200px;
+    height: 200px;
+    display: block;
+}
+.megabox a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.megabox a:hover{
+    background: #ddd;
+}
+.megamenu:hover .megamenubox{
+    width:200px;
+}
+
+#wrapper5{
+    width:400px;
+    height: 400px;
+    clear: both;
+    float: left;
+    border: 1px solid black;
+}
+.heads{
+    width:400px;
+    height:50px;
+    float: right;
+}
+.heada{
+    width:400px;
+    height: 50px;
+    float: left;
+}
+.heada > a{
+    width:100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    background: #eee;
+}
+.heada > a:hover{
+    background: #ddd;
+}
+.headabox{
+    clear: both;
+    width:400px;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.headaboxx{
+    width: 400px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right:0;
+    transition:0.5s;
+    overflow: hidden;
+}
+.headaboxx ul{
+    width:400px;
+    height: 200px;
+    display: block;
+}
+.headaboxx ul li{
+    width:100px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+}
+.headaboxx ul li a{
+    width:100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #ddd;
+}
+.headaboxx ul li a:hover{
+    background: #eee;
+}
+.heada:hover .headaboxx{
+    height: 200px;
+}
+.content{
+    width:400px;
+    height: 200px;
+    float: left;
+    background: red;
+}
