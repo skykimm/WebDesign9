@@ -1,0 +1,187 @@
+@charset="utf";
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+a:link, a:visited{
+    text-decoration:none;
+    color:black;
+}
+ul,li{
+    list-style: none;
+}
+#wrapper{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.header{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.menu{
+    width:200px;
+    height: 50px;
+    float: left;
+    overflow: hidden;
+    transition:0.5s;
+}
+.menu>a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.menu>a:hover{
+    background: #ddd;
+}
+.sub{
+    width:200px;
+    height: 200px;
+    float: left;
+    display: block;
+}
+.sub a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.sub a:hover{
+    background: #ddd;
+}
+.menu:hover{
+    height: 250px;
+}
+
+#wrapper2{
+    width:400px;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+}
+.header2{
+    width:200px;
+    height: 200px;
+}
+.menu2{
+    width:200px;
+    height: 50px;
+    float: left;
+    position:relative;
+}
+.menu2 > a{
+    width:200px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.menu2 > a:hover{
+    background: #ddd;
+}
+.sub{
+    width:200px;
+    height: 200px;
+    display: block;
+}
+.submenu{
+    width:0;
+    height: 200px;
+    position:absolute;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    transition:0.5s;
+}
+.submenu a{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #eee;
+}
+.submenu a:hover{
+    background: #ddd;
+}
+.menu2:hover .submenu{
+    width:200px;
+}
+#wrapper3{
+    width:800px;
+    height: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.header3{
+    width:400px;
+    height: 100px;
+    float: right;
+    background: #eee;
+}
+.menus{
+    width:400px;
+    height: 100px;
+    float: left;
+}
+.menus > a{
+    width:100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    background: #ddd;
+}
+.subs{
+    width:800px;
+    height: 0;
+    float: right;
+    background: #eee;
+    position: relative;
+    overflow: hidden;
+    transition:0.5s;
+}
+.subsmenu{
+    width:400px;
+    height: 200px;
+    float: right;
+    position:absolute;
+    top: 0;
+    right:0;
+    
+}
+.subsmenu ul{
+    width:400px;
+    height: 200px;
+    display: block;
+}
+.subsmenu ul li{
+    width:100px;
+    height: 200px;
+    float: left;
+    display: inline-block;
+}
+.subsmenu ul li a{
+    width:100px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+.subsmenu ul li a:hover{
+    background: #ddd;
+}
+.menus:hover .subs{
+    height: 200px;
+}
